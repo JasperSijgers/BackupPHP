@@ -65,7 +65,7 @@ if(!file_exists($backup_dir)){
 ```
 
 <b>Old Backups</b><br>
-The backup folder is scanned for any files last modified before the maximum age of the oldest backup as set in the configuration section. If those are found, the files are deleted. <u>This means that any files placed in the directory that aren't backups are also likely to get deleted!</u>
+The backup folder is scanned for any files last modified before the maximum age of the oldest backup as set in the configuration section. If those are found, the files are deleted. <u>This means that any archives (.tar.gz) placed in the directory that aren't backups are also likely to get deleted!</u>
 ```php
 // Check for old backups to be deleted
 echo('Checking for old backups to be deleted' . PHP_EOL);
